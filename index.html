@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinhomes Smart Parking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <div class="brand-mark">V</div>
+          <div>
+            <div class="eyebrow">Vin Smart Future</div>
+            <div class="brand-name">Vinhomes Parking AI</div>
+          </div>
+        </div>
+        <nav class="nav">
+          <span>Overview</span>
+          <span>Zones</span>
+          <span>Insights</span>
+          <span>Alerts</span>
+        </nav>
+        <button class="primary-btn">Live mode</button>
+      </header>
+
+      <main class="dashboard">
+        <section class="hero panel">
+          <div class="hero-copy">
+            <span class="badge">AI recommendation • live</span>
+            <h1>Find the best parking spot before you drive in.</h1>
+            <p>
+              A smart parking assistant helps drivers choose the nearest, safest,
+              and least congested parking zones in real time.
+            </p>
+            <div class="cta-row">
+              <button class="primary-btn">Recommend now</button>
+              <button class="ghost-btn">View analytics</button>
+            </div>
+            <div class="mini-stats">
+              <div>
+                <strong>3</strong>
+                <span>recommended zones</span>
+              </div>
+              <div>
+                <strong>92%</strong>
+                <span>confidence</span>
+              </div>
+              <div>
+                <strong>4 min</strong>
+                <span>avg. search time</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="signal-card">
+            <div class="signal-header">
+              <span>Live occupancy</span>
+              <span class="status-dot">●</span>
+            </div>
+            <div class="map-box">
+              <div class="lot zone-a">A</div>
+              <div class="lot zone-b active">B</div>
+              <div class="lot zone-c">C</div>
+              <div class="lot zone-d">D</div>
+              <div class="entry">ENTRY</div>
+            </div>
+            <div class="legend">
+              <span><i class="low"></i> low</span>
+              <span><i class="med"></i> medium</span>
+              <span><i class="high"></i> high</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="metrics-grid">
+          <article class="metric panel">
+            <span class="metric-label">Today’s occupancy</span>
+            <strong>71%</strong>
+            <div class="bar"><span style="width: 71%"></span></div>
+          </article>
+          <article class="metric panel">
+            <span class="metric-label">Average stay</span>
+            <strong>2h 18m</strong>
+            <div class="bar"><span style="width: 58%"></span></div>
+          </article>
+          <article class="metric panel">
+            <span class="metric-label">Missed turns</span>
+            <strong>12</strong>
+            <div class="bar"><span style="width: 22%"></span></div>
+          </article>
+          <article class="metric panel accent">
+            <span class="metric-label">Safety check</span>
+            <strong>Stable</strong>
+            <div class="bar"><span style="width: 94%"></span></div>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <article class="panel list-panel">
+            <div class="panel-header">
+              <h2>Recommended zones</h2>
+              <span class="chip success">High confidence</span>
+            </div>
+            <ul class="recommendation-list">
+              <li>
+                <div>
+                  <strong>Zone B2-C</strong>
+                  <small>2 min walk • 0.48 occupancy</small>
+                </div>
+                <span>89%</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Zone B2-A</strong>
+                  <small>3 min walk • 0.52 occupancy</small>
+                </div>
+                <span>85%</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Zone B3-D</strong>
+                  <small>5 min walk • 0.61 occupancy</small>
+                </div>
+                <span>81%</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="panel insight-panel">
+            <div class="panel-header">
+              <h2>AI reasoning</h2>
+              <span class="chip neutral">Updated 2 mins ago</span>
+            </div>
+            <div class="insight-box">
+              <p>
+                Based on live occupancy streams and recent parking turnover, the
+                best recommendation is to prioritize Zone B2-C because it has the
+                lowest congestion and the shortest walking distance from the main gate.
+              </p>
+            </div>
+            <div class="checkpoint-row">
+              <div>
+                <label>Fallback mode</label>
+                <strong>Off</strong>
+              </div>
+              <div>
+                <label>Confidence</label>
+                <strong>92%</strong>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
